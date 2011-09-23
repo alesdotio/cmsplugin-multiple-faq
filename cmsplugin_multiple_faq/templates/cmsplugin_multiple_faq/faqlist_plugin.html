@@ -1,0 +1,10 @@
+<h4>{{ object }}</h4>
+<ul>
+	{% for entry in object.faq_entries.all %}
+	<li>
+		<p>{{ forloop.counter }}</p>
+		<h6>{{ entry.question }}</h6>
+		<p>{{ entry.answer }}</p>
+	</li>
+	{% endfor %}
+</ul>

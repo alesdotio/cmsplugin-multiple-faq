@@ -1,4 +1,4 @@
-<h4>{{ object }}</h4>
+<h3 id="{{ object.get_slug }}">{{ object }}</h3>
 <ul>
 	{% for entry in object.faq_entries.all %}
 	<li>
